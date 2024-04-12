@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
+    <style>
+        .detailscontainer{
+            background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.98));
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="w-full h-screen bg-black">
+        <div class="imgcontainer w-full h-screen relative overflow-hidden">
+            <div class="maincard w-[130%] h-[130%] top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 absolute z-[3]">
+                <img class="w-full h-full object-cover" src="" alt="">
+            </div>
+            <div class="incomingcard w-[130%] h-[130%] top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 absolute z-[2]">
+                <img class="w-full h-full object-cover" src="" alt="">
+            </div>
+        </div>
+        <div class="w-full h-screen z-[4] absolute top-0 left-0 flex flex-col justify-between font-['Helvetica']">
+            <div class="navbar px-5 py-5 flex items-center justify-between text-white">
+                <div class="profileimg w-[3rem] h-[3rem] rounded-full bg-red-600 overflow-hidden">
+                    <img class="w-full h-full object-cover rounded-full" src="https://images.unsplash.com/photo-1509967419530-da38b4704bc6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDd8fHxlbnwwfHx8fHw%3D" alt="">
+                </div>
+                <h3 class="font-semibold text-[18px]">TheyLikedYou</h3>
+                <div class="chaticon relative flex items-center justify-center w-[3rem] h-[3rem] rounded-full bg-white/20">
+                    <i class="opacity-70 text-[18px] ri-chat-3-fill"></i>
+                    <div class="badge w-5 h-5 bg-[#FC5149] rounded-full absolute flex items-center justify-center top-0 right-0 -translate-y-[5px] translate-x-[3px]">
+                        <h5 class="font-semibold text-[13px]">5</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="detailscontainer w-full">
+                <div class="details px-5 py-5 w-full">
+                    <div class="elementz location flex gap-3">
+                        <i class="w-[2rem] h-[2rem] bg-white flex items-center justify-center rounded-full ri-plane-fill"></i>
+                        <h3 class="text-white flex items-center text-[17px]">California, USA</h3>
+                    </div>
+                    <div class="elementz name flex gap-4  mt-1 text-white">
+                        <h3 class="font-medium text-7xl tracking-tight">Victoria</h3>
+                        <h3 class="font-medium text-7xl tracking-tight opacity-60">20</h3>
+                    </div>
+                    <div class="elementz tags flex gap-2 mt-2 text-white">
+                    </div>
+                    <div class="elementz bio text-white mt-3">
+                        <h3 class="text-xl">Bio</h3>
+                        <p class="text-[15px] mt-1 opacity-90">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus in nobis perspiciatis! Lorem ipsum dolor.</p>
+                    </div>
+                    <div class="elementz buttons flex items-start gap-1 mt-8">
+                        <button class="deny py-3 w-1/2 text-2xl font-bold rounded-xl bg-white">
+                            <i class="ri-close-line"></i>
+                        </button>
+                        <button class="accept py-3 w-1/2 text-2xl font-bold rounded-xl text-white bg-[#FC5149]">
+                            <i class="ri-heart-2-fill"></i>
+                        </button>
+    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+</body>
+</html>
